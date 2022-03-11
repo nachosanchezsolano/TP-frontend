@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+}
+
+.gridContainer{
+    display: grid;
+    gap: 10px;
+    grid-template-areas:
+     "head" 50px
+     "form"
+     "footer";
+     grid-template:
+     "head" 50px
+     "form" auto
+     "footer" 50px
+     ;
+}
+
+
+.head{
+    grid-area: "head";
+    background-color: aqua;
+    
+}
+
+.form{
+    grid-area: "form";
+    background-color: rgb(40, 53, 18);
+}
+
+.footer{
+    grid-area: "footer";
+    background-color: rgb(31, 11, 14);
+}
+
