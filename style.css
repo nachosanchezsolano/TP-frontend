@@ -16,11 +16,12 @@ body{
     gap: 10px;
     grid-template-areas:
      "head" 50px
-     "form"
-     "footer";
+     "pushImg" "form"
+     "footer"
+     ;
      grid-template:
      "head" 50px
-     "form" auto
+      "pushImg" "form" auto 
      "footer" 50px
      ;
 }
