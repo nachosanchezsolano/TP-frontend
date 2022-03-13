@@ -14,32 +14,31 @@ body{
 .gridContainer{
     display: grid;
     gap: 10px;
-    grid-template-areas:
-     "head" 50px
-     "pushImg" "form"
-     "footer"
-     ;
-     grid-template:
-     "head" 50px
-      "pushImg" "form" auto 
-     "footer" 50px
-     ;
+    grid-template-areas: "header header"
+                         "pushImg form"
+                         "footer footer"
+                        ;
+    grid-template-rows: 50px auto 50px;
+    grid-template-columns: 50%;
 }
 
 
-.head{
-    grid-area: "head";
-    background-color: aqua;
-    
+.header{
+    grid-area: header;
+    background-color: aquamarine
 }
 
 .form{
-    grid-area: "form";
+    grid-area: form;
     background-color: rgb(40, 53, 18);
 }
 
 .footer{
-    grid-area: "footer";
+    grid-area: footer;
     background-color: rgb(31, 11, 14);
 }
 
+.pushImg{
+    grid-area: pushImg;
+    background-color: blueviolet;
+}
