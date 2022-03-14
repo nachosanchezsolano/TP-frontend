@@ -20,24 +20,25 @@
                 <input type="text" id="clientName">
         
                 <br>
-                <label for="pizzaType" class="form">Elija su pizza</label>     
+                <label for="pizzaType" class="form"></label>     
                 <select name="pizzaType" id="pizzaType">
-                        <option value="aCaballo"> A caballo</option>
+                        <option disabled>¿Qué pizza desea pedir?</option>
                         <option value="napolitana">Napolitaba</option>
                         <option value="4Quesos">4 Quesos</option>             
                         <option value="provolone">Provolone</option>
+                        <option value="aCaballo"> A caballo</option>
                 
                </select>
                <br>
-                <label for="pizzaSize" class="form">Elija el tamaño</label>
                 <select name="pizzaSize" id="pizzaSize">
-                        <option value="grande">Grande</option>
+                        <option disabled>¿De qué tamaño desea su pizza?</option>
                         <option value="chica">Chica</option>
                         <option value="mediana">mediana</option>
+                        <option value="grande">Grande</option>
                 </select> 
                 </select>
                 <br>
-                <input type="button" value="Agregar" name="input" id="input">
+                <input type="button" value="Agregar" name="formInput" id="input" class="form">
 
             </form>
     </article>
