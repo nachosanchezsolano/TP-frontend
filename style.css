@@ -11,11 +11,9 @@
 html{
     height: 100%;
 }
-
 body{
     min-height: 100%;
 }
-
 select {
     appearance: none;
     background-color: transparent;
@@ -27,20 +25,36 @@ select {
     font-size: inherit;
     cursor: inherit;
     line-height: inherit;
+    outline: none;
+    color: #EC6F66;
+    cursor: pointer;
   }
+  select:hover {
+    background-color: transparent;
+    color: white;
+    padding: 15px 5px 15px 25px;
+    }
   select::-ms-expand {
     display: none;
   }
-  select {
-    outline: none;
-  }
-
+select option {
+    background-color: white;
+    color: gray;
+    width: 310px;
+    padding: 10px 15px;
+    height: 20px;
+    cursor: pointer;
+    }
+    select option:hover {
+    padding-left: 25px;
+    width: 270px;
+    color: #EC6F66;
+    }
   :root {
     --select-border: #777;
     --select-focus: blue;
     --select-arrow: var(--select-border);
   }
-  
 .gridContainer{
     display: grid;
     gap: 10px;
@@ -51,8 +65,6 @@ select {
     grid-template-rows: 50px auto 50px;
     grid-template-columns: 50%;
 }
-
-
 .header{
     grid-area: header;
     background-color: 
@@ -65,21 +77,20 @@ select {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
-  
-}    
+  text-align: center;
+  background: -webkit-linear-gradient(90deg, #EC6F66 10%, #F3A183 90%);
+}
 .form select{
     justify-items: center;
     align-items: center;
-   display: inline-flex;
-   width: 100%;
-   border: 2px solid var(--select-border);
+    display: inline-flex;
+    width: 100%;
+     border: 2px solid var(--select-border);
+     border-radius: 0 0 0.5rem 0.5rem;
+     width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
-.form input{
-    justify-items: center;
-    align-items: center;
-}
-
 .form label{
     display: inline-block;
     text-align: right ;
@@ -94,15 +105,47 @@ select {
     align-self: center;
     align-items: center;
 }
-
-
-
 .footer{
     grid-area: footer;
-    background-color: rgb(31, 11, 14);
+    background-color:  rgba(255, 174, 69, 0.596);
 }
 
 .pushImg{
     grid-area: pushImg;
-    background-color: blueviolet;
+    background-color: rgb(219, 100, 45);
 }
+
+/*Diseño de InputButton*/
+#input.form{
+    margin-top: 10px;
+    display: inline-flex;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: rgba(255, 170, 59, 0.678);
+}
+#input.form:hover {
+    border: solid #000000 1px;
+    background: rgb(255, 174, 69);
+    background-image: -webkit-linear-gradient(top, rgb(255, 166, 50), rgba(255, 215, 162, 0.877));
+    background-image: -moz-linear-gradient(top, rgb(255, 166, 50), rgba(255, 215, 162, 0.877));
+    background-image: -ms-linear-gradient(top, rgb(255, 166, 50), rgba(255, 215, 162, 0.877));
+    background-image: -o-linear-gradient(top, rgb(255, 166, 50), rgba(255, 215, 162, 0.877));
+    text-decoration: none;
+ }
+#input.form:active {
+	box-shadow:inset #ffffff 0px 5px 8px -1px,#d6d6d6 1px 0 2px;
+	o-box-shadow:inset #ffffff 0px 5px 8px -1px,#d6d6d6 1px 0 2px;
+	-moz-box-shadow:inset #ffffff 0px 5px 8px -1px,#d6d6d6 1px 0 2px;
+	-webkit-box-shadow:inset #ffffff 0px 5px 8px -1px,#d6d6d6 1px 0 2px;
+	position:relative;
+	top:3px;
+}
+
+    
+
+
+
+
+   
+  
