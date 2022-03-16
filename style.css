@@ -1,6 +1,6 @@
 *{
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 *,
@@ -14,47 +14,8 @@ html{
 body{
     min-height: 100%;
 }
-select {
-    appearance: none;
-    background-color: transparent;
-    border: none;
-    padding: 0 1em 0 0;
-    margin: 0;
-    width: 100%;
-    font-family: inherit;
-    font-size: inherit;
-    cursor: inherit;
-    line-height: inherit;
-    outline: none;
-    color: #EC6F66;
-    cursor: pointer;
-  }
-  select:hover {
-    background-color: transparent;
-    color: white;
-    padding: 15px 5px 15px 25px;
-    }
-  select::-ms-expand {
-    display: none;
-  }
-select option {
-    background-color: white;
-    color: gray;
-    width: 310px;
-    padding: 10px 15px;
-    height: 20px;
-    cursor: pointer;
-    }
-    select option:hover {
-    padding-left: 25px;
-    width: 270px;
-    color: #EC6F66;
-    }
-  :root {
-    --select-border: #777;
-    --select-focus: blue;
-    --select-arrow: var(--select-border);
-  }
+
+
 .gridContainer{
     display: grid;
     gap: 10px;
@@ -80,17 +41,6 @@ select option {
   text-align: center;
   background: -webkit-linear-gradient(90deg, #EC6F66 10%, #F3A183 90%);
 }
-.form select{
-    justify-items: center;
-    align-items: center;
-    display: inline-flex;
-    width: 100%;
-     border: 2px solid var(--select-border);
-     border-radius: 0 0 0.5rem 0.5rem;
-   width: 150px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
 .form label{
     display: inline-block;
     text-align: right ;
@@ -99,11 +49,6 @@ select option {
     align-items: center;
     align-content: center;
     
-}
-
-.select{
-    align-self: center;
-    align-items: center;
 }
 .footer{
     grid-area: footer;
@@ -142,10 +87,17 @@ select option {
 	top:3px;
 }
 
-    
 
-
-
-
-   
+/* select styles */
+select{
+    background-color: #ef8874;
+    cursor: pointer;
+}  
+select:hover{
+    color: #ffffff
+}
+  select option {
+  background: #ffffff00;
+  cursor: pointer;
+  }
   
