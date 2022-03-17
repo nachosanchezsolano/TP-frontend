@@ -15,12 +15,14 @@ body{
     min-height: 100%;
 }
 
+label{
+   color: #eeeeee;
 
+}
 .gridContainer{
     display: grid;
-    gap: 10px;
     grid-template-areas: "header header"
-                         "pushImg form"
+                         "table form"
                          "footer footer"
                         ;
     grid-template-rows: 50px auto 50px;
@@ -28,8 +30,10 @@ body{
 }
 .header{
     grid-area: header;
-    background-color: 
-    rgb(255, 174, 69)
+    background: #ffb185;
+    border-width: 2px;
+    border-style:solid;
+    border-color: #eeeeee;
 }
 
 .form{
@@ -39,7 +43,7 @@ body{
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: -webkit-linear-gradient(90deg, #EC6F66 10%, #F3A183 90%);
+  background: -webkit-linear-gradient(90deg, #e07038 10%, #e07038 60%);
 }
 .form label{
     display: inline-block;
@@ -52,37 +56,34 @@ body{
 }
 .footer{
     grid-area: footer;
-    background-color:  rgba(255, 174, 69, 0.596);
-}
-
-.pushImg{
-    grid-area: pushImg;
-    background-color: rgb(219, 100, 45);
+    background: #1d1d1d;
 }
 
 /*Diseño de InputButton*/
+
 #input.form{
+    color: #eeeeee;
     margin-top: 10px;
     display: inline-flex;
     border-radius: 10px;
     width: 100px;
     height: 30px;
-    background-color: rgba(255, 170, 59, 0.678);
+    background-color: -webkit-linear-gradient(90deg, #ff6161 10%, #ff6161 60%);
 }
 #input.form:hover {
     border: solid #000000 1px;
     background: rgb(255, 174, 69);
-    background-image: -webkit-linear-gradient(top, rgb(255, 166, 50), rgba(255, 215, 162, 0.877));
-    background-image: -moz-linear-gradient(top, rgb(255, 166, 50), rgba(255, 215, 162, 0.877));
-    background-image: -ms-linear-gradient(top, rgb(255, 166, 50), rgba(255, 215, 162, 0.877));
-    background-image: -o-linear-gradient(top, rgb(255, 166, 50), rgba(255, 215, 162, 0.877));
+    background-image: -webkit-linear-gradient(90deg, #e07038 10%, #e07038 60%);
+    background-image: -moz-linear-gradient(90deg, #e07038 10%, #e07038 60%);
+    background-image: -ms-linear-gradient(90deg, #e07038 10%, #e07038 60%);
+    background-image: -o-linear-gradient(90deg, #e07038 10%, #e07038 60%);
     text-decoration: none;
  }
 #input.form:active {
-	box-shadow:inset #ffffff 0px 5px 8px -1px,#d6d6d6 1px 0 2px;
-	o-box-shadow:inset #ffffff 0px 5px 8px -1px,#d6d6d6 1px 0 2px;
-	-moz-box-shadow:inset #ffffff 0px 5px 8px -1px,#d6d6d6 1px 0 2px;
-	-webkit-box-shadow:inset #ffffff 0px 5px 8px -1px,#d6d6d6 1px 0 2px;
+	box-shadow:inset rgb(233, 233, 233) 0px 5px 8px -1px,#d6d6d6 1px 0 2px;
+	-ms-box-shadow:inset rgb(233, 233, 233) 0px 5px 8px -1px,#d6d6d6 1px 0 2px;
+	-moz-box-shadow:inset rgb(233, 233, 233) 0px 5px 8px -1px,#d6d6d6 1px 0 2px;
+	-webkit-box-shadow:inset rgb(233, 233, 233) 0px 5px 8px -1px,#d6d6d6 1px 0 2px;
 	position:relative;
 	top:3px;
 }
@@ -90,7 +91,7 @@ body{
 
 /* select styles */
 select{
-    background-color: #ef8874;
+    background-color:#534342 10%;
     cursor: pointer;
 }  
 select:hover{
@@ -101,3 +102,31 @@ select:hover{
   cursor: pointer;
   }
   
+/* Diseño Tabla*/
+
+  .table{
+    background: -webkit-linear-gradient(90deg, #e07038 10%, #e07038 60%);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    grid-area: table;
+    display: block;
+    background-color: rgba(0, 0, 0, 0);
+    justify-content: center;
+    border-collapse: collapse;
+    color:#eeeeee
+    ;
+
+}
+td, th{ 
+    border-width: 2px;
+    border-color:#eeeeee ;
+    border-style: solid;
+    padding: 5px;
+  }
+
+
+
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 4px ), repeating-linear-gradient( #444cf755, #444cf7 );
