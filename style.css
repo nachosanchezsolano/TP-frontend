@@ -47,10 +47,10 @@ label{
     grid-area: footer;
     background-image: url("img/headerBackgroundfoot.png");
 }
+
 .form{
-    grid-area: form;
+grid-area: form;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -102,21 +102,15 @@ label{
 
 
 /* select styles */
-select{
-    background-color:#534342 10%;
+.boxes{
+    background:#000000c0 10%;
     cursor: pointer;
+    color: #cecece;
+    height: 30px;
 }  
-select:hover{
-    color: #000000;
-    background: #00000000;
+.boxes:hover{
+    background: #412929c0 10%;
 }
-  select option {
-  background-color: #ffffff00;
-  cursor: pointer;
-  }
-
-
-  
 /* Diseño Tabla*/
 
   .table{
@@ -128,8 +122,8 @@ select:hover{
 }
 table{
     grid-area: table;
-    display: block;
-    background-color: rgba(0, 0, 0, 0);
+    display:flex;
+    background-color: rgba(0, 0, 0, 0.616);
     justify-content: center;
     border-collapse: collapse;
     color:#eeeeee
@@ -143,3 +137,7 @@ td, th{
     padding: 5px;
   }
 
+  #clientName{
+      display: flex;
+      top: 10px;
+  }

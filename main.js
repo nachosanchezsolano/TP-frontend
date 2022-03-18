@@ -46,23 +46,22 @@ console.log(totalPrice);
 }
 
 
-function changeImage(){
+function changeImage(event){
   
   var pizzaType=document.getElementById("pizzaType").value;
-  var form=document.getElementByClassName("form")
 
    switch(pizzaType){
   
-    case "Napolitana": form.style.backgroundImage = 'url("/img/napolitana.png")' ;
+    case "Napolitana": event.style.backgroundImage = 'url("img/napolitana.png")';
               
     break;
 
-case  "4 Quesos": 
+case  "4 Quesos": event.style.backgroundImage = 'url("img/4 Quesos.png")'
     break;
 
-case "Provolone" : 
+case "Provolone" : event.style.backgroundImage = 'url("img/Provolone.png")'
     break;
 
-case  "A Caballo" : 
+case  "A Caballo" : event.style.backgroundImage = 'url("img/aCaballo.png")'
    }
 }
