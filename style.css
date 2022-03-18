@@ -22,21 +22,31 @@ label{
 .gridContainer{
     display: grid;
     grid-template-areas: "header header"
-                         "table form"
+                         "form table"
                          "footer footer"
                         ;
-    grid-template-rows: 50px auto 50px;
+    grid-template-rows: 100px auto 50px;
     grid-template-columns: 50%;
 }
 
 .header{
+    display:flex;
     grid-area: header;
     border-width: 2px;
     border-style:solid;
-    border-color: #eeeeee00;
-    background-image: url("/Img/headerBackground.png");
+    background-image: url("img/headerBackground.png");
 }
 
+.logo{
+    display: flex;
+    width: 100px;
+    height: 100px;
+}
+
+.footer{
+    grid-area: footer;
+    background-image: url("img/headerBackgroundfoot.png");
+}
 .form{
     grid-area: form;
   display: flex;
@@ -44,7 +54,7 @@ label{
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: -webkit-linear-gradient(90deg, #e07038 10%, #e07038 60%);
+  background: -webkit-linear-gradient(90deg, #820300 10%, #820300 60%);
 }
 
 #getElementByClass{
@@ -60,10 +70,6 @@ label{
     align-content: center;
     
 }
-.footer{
-    grid-area: footer;
-    background: #1d1d1d;
-}
 
 /*Diseño de InputButton*/
 
@@ -74,15 +80,15 @@ label{
     border-radius: 10px;
     width: 100px;
     height: 30px;
-    background-color: -webkit-linear-gradient(90deg, #ff6161 10%, #ff6161 60%);
+    background-color: -webkit-linear-gradient(90deg, #820300 10%, #820300 60%);
 }
 #input.form:hover {
     border: solid #000000 1px;
-    background: rgb(255, 174, 69);
-    background-image: -webkit-linear-gradient(90deg, #e07038 10%, #e07038 60%);
-    background-image: -moz-linear-gradient(90deg, #e07038 10%, #e07038 60%);
-    background-image: -ms-linear-gradient(90deg, #e07038 10%, #e07038 60%);
-    background-image: -o-linear-gradient(90deg, #e07038 10%, #e07038 60%);
+    background: #820300;
+    background-image: -webkit-linear-gradient(90deg, #820300 10%, #820300 60%);
+    background-image: -moz-linear-gradient(90deg, #820300 10%, #820300 60%);
+    background-image: -ms-linear-gradient(90deg, #820300 10%, #820300 60%);
+    background-image: -o-linear-gradient(90deg, #820300 10%, #820300 60%);
     text-decoration: none;
  }
 #input.form:active {
@@ -114,7 +120,8 @@ select:hover{
 /* Diseño Tabla*/
 
   .table{
-    background: -webkit-linear-gradient(90deg, #e07038 10%, #e07038 60%);
+    background-image: url("Img/Wood\ Background.jpg");
+    background-size: 100%;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -135,3 +142,4 @@ td, th{
     border-style: solid;
     padding: 5px;
   }
+

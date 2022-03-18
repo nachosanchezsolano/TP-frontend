@@ -10,7 +10,7 @@
 </head>
 <body class="gridContainer"> 
     <header class="header">
- 
+ <img src="img/logo.png" alt="" class="logo">
     </header>
     <div class="table" id="table">
         <table>
@@ -27,12 +27,12 @@
             </tbody>
         </table>
     </div>
-    <article class="form">
+    <article class="form"  onchange="changeImage(this)">
             <form>
                 <label for="clientName">Ingrese su nombre
                 <input type="text" id="clientName">
                 <br>
-                <select name="pizzaType" id="pizzaType" onchange="changeImage()">
+                <select name="pizzaType" id="pizzaType">
                         <option value="">¿Qué pizza desea pedir?</option>
                         <option value="Napolitana">Napolitana</option>
                         <option value="4 Quesos">4 Quesos</option>             
