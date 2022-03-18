@@ -10,9 +10,9 @@
 </head>
 <body class="gridContainer"> 
     <header class="header">
-        
+ 
     </header>
-    <div class="table">
+    <div class="table" id="table">
         <table>
             <thead>
             <tr>
@@ -32,18 +32,18 @@
                 <label for="clientName">Ingrese su nombre
                 <input type="text" id="clientName">
                 <br>
-                <select name="pizzaType" id="pizzaType" >
+                <select name="pizzaType" id="pizzaType" onchange="changeImage()">
                         <option value="">¿Qué pizza desea pedir?</option>
-                        <option value="napolitana" >Napolitaba</option>
-                        <option value="4Quesos" >4 Quesos</option>             
-                        <option value="provolone" >Provolone</option>
-                        <option value="aCaballo" > A caballo</option>
+                        <option value="Napolitana">Napolitana</option>
+                        <option value="4 Quesos">4 Quesos</option>             
+                        <option value="Provolone">Provolone</option>
+                        <option value="A Caballo"> A caballo</option>
                </select>
                 <select name="pizzaSize" id="pizzaSize">
                         <option value="">¿De qué tamaño desea su pizza?</option>
-                        <option value="chica">Chica</option>
-                        <option value="mediana">mediana</option>
-                        <option value="grande">Grande</option>
+                        <option value="Chica">Chica</option>
+                        <option value="Mediana">mediana</option>
+                        <option value="Grande">Grande</option>
                 </select> 
                 </select>
                 <br>

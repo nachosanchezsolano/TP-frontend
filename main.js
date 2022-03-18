@@ -1,4 +1,4 @@
-var groupCombos=[]
+var groupCombos=[];
 
 function localStorageSaveCombo() {   
 var combo=[];
@@ -13,24 +13,24 @@ var totalPrice = Number
 
 switch (combo[1]){
 
-  case "napolitana": pizzaPrice=500;
+  case "Napolitana": pizzaPrice=500;
                     break;
-  case  "4Quesos": pizzaPrice=700; 
+  case  "4 Quesos": pizzaPrice=700; 
                     break;
-  case "provolone" : pizzaPrice= 600;
+  case "Provolone" : pizzaPrice= 600;
                     break;
-  case  "aCaballo" : pizzaPrice= 800;               
+  case  "A Caballo" : pizzaPrice= 800;               
 
 }
 
 switch (combo[2]) {
-  case "chica": sizePrice=0.75;
+  case "Chica": sizePrice=0.75;
                 break;
 
-  case "mediana": sizePrice=1;
+  case "Mediana": sizePrice=1;
                 break;
   
-  case "grande": sizePrice=1.25
+  case "Grande": sizePrice=1.25
                 break;
 }
 
@@ -43,4 +43,26 @@ console.log(groupCombos);
 console.log(pizzaPrice);
 console.log(sizePrice);
 console.log(totalPrice);
+}
+
+
+function changeImage(){
+  
+  var pizzaType=document.getElementById("pizzaType").value;
+  var form=document.getElementByClassName("form")
+
+   switch(pizzaType){
+  
+    case "Napolitana": form.style.backgroundImage = 'url("/img/napolitana.png")' ;
+              
+    break;
+
+case  "4 Quesos": 
+    break;
+
+case "Provolone" : 
+    break;
+
+case  "A Caballo" : 
+   }
 }

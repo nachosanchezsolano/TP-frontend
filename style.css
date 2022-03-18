@@ -28,12 +28,13 @@ label{
     grid-template-rows: 50px auto 50px;
     grid-template-columns: 50%;
 }
+
 .header{
     grid-area: header;
-    background: #ffb185;
     border-width: 2px;
     border-style:solid;
-    border-color: #eeeeee;
+    border-color: #eeeeee00;
+    background-image: url("/Img/headerBackground.png");
 }
 
 .form{
@@ -44,6 +45,11 @@ label{
   align-items: center;
   text-align: center;
   background: -webkit-linear-gradient(90deg, #e07038 10%, #e07038 60%);
+}
+
+#getElementByClass{
+
+    background-image:url("");
 }
 .form label{
     display: inline-block;
@@ -95,12 +101,15 @@ select{
     cursor: pointer;
 }  
 select:hover{
-    color: #ffffff
+    color: #000000;
+    background: #00000000;
 }
   select option {
-  background: #ffffff00;
+  background-color: #ffffff00;
   cursor: pointer;
   }
+
+
   
 /* Diseño Tabla*/
 
@@ -126,7 +135,3 @@ td, th{
     border-style: solid;
     padding: 5px;
   }
-
-
-
-background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 4px ), repeating-linear-gradient( #444cf755, #444cf7 );
